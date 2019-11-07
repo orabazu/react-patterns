@@ -3,7 +3,8 @@ import { render } from "react-dom";
 import './style.scss';
 import { Router } from "@reach/router"
 
-import BasicToggle from './BasicToggle/BasicToggle'
+import BasicToggleUsage from './BasicToggle/BasicToggleUsage'
+import CompoundToggleUsage from './CompoundComponent/CompoundToggleUsage'
 
 class App extends React.Component {
   onToggle = (e) => {
@@ -11,8 +12,9 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Router>
-        <BasicToggle path="/" onToggle={this.onToggle} />
+      <Router className="switcher__wrapper">
+        <BasicToggleUsage path="/" onToggle={this.onToggle} />
+        <CompoundToggleUsage path="/comp" onToggle={this.onToggle}  />
       </Router>
     );
   }
