@@ -1,31 +1,21 @@
 
-### React Parcel Boilerplate
+### React Patterns
 
-Dead simple react starter with parcel bundler 📦
+Implementation of some of the basic & advanced react patterns 👩‍🚀
 
-## Available Scripts
+- Compound Components
+- Flexible Compound Components [WIP]
+- Render Props [WIP]
+- Prop collection [WIP]
+- Prop getters [WIP]
 
-In the project directory, you can run:
+#### Compound Components
 
-### `npm format`
+Compound component is a pattern to that such components share the state under the hood implicitly 
+without configuration
 
-Launches prettier to reformat & overwrites files.
 
-### `npm format:check`
+### Boilerplate 
 
-Launches prettier to reformat but do not overwrite files. Usefull for CI integrations.
-
-### `npm lint`
-
-Show linter errors based on default eslint configuration.
-
-### `npm dev`
-
-Builds up the app in dist folder using parcel.
-
-## Babel 
-
-### `transform-class-properties`
-
-Enriches the developmnent experience, used for getting rid of unnecessary constructors. Take a look at [tc39](https://github.com/tc39/proposal-class-fields) and [babel](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) for further detail
+[react-parcel-boilerplate](https://github.com/zhunor/react-parcel-boilerplate) 
 
