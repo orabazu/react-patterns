@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch } from '../Switch/Switch';
 
-class CompoundComponent extends Component {
+class CompoundToggle extends Component {
   state = {
     on: true,
   }
@@ -31,4 +31,4 @@ class CompoundComponent extends Component {
 }
 
 
-export default CompoundComponent;
+export default CompoundToggle;

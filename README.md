@@ -4,7 +4,7 @@
 Implementation of some of the basic & advanced react patterns 👩‍🚀
 
 - Compound Components
-- Flexible Compound Components [WIP]
+- Flexible Compound Components
 - Render Props [WIP]
 - Prop collection [WIP]
 - Prop getters [WIP]
