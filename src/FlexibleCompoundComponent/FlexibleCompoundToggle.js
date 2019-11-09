@@ -4,9 +4,7 @@ import { Switch } from '../Switch/Switch';
 const ToggleContext = React.createContext()
 
 class FlexibleCompoundToggle extends Component {
-  state = {
-    on: true,
-  }
+  
 
   toggle = () => {
     this.setState(
@@ -15,6 +13,11 @@ class FlexibleCompoundToggle extends Component {
         this.props.onToggle(this.state.on)
       },
     )
+  }
+
+  state = {
+    on: true,
+    toggle: this.toggle
   }
 
   static On = props => (<ToggleContext.Consumer>{contextVal => contextVal.on ? props.children : null}</ToggleContext.Consumer>)
@@ -32,7 +35,7 @@ class FlexibleCompoundToggle extends Component {
 
   render() {
     return (
-      <ToggleContext.Provider value={{ on: this.state.on, toggle: this.toggle }}>
+      <ToggleContext.Provider value={this.state}>
         {this.props.children}
       </ToggleContext.Provider>
     )
