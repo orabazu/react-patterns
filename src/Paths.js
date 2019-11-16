@@ -3,4 +3,5 @@ export default {
   flexibleCompoundPath: '/flexible-compound-component',
   renderPropPath: '/render-prop',
   propCollectionPath: '/prop-collection',
+  initialStateReducerPath: '/state-reducer',
 }

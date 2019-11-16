@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class RenderProp extends Component {
+class PropCollection extends Component {
   state = {
     on: true,
   }
@@ -31,4 +31,4 @@ class RenderProp extends Component {
 }
 
 
-export default RenderProp;
+export default PropCollection;

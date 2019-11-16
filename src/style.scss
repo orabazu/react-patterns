@@ -1,10 +1,42 @@
-.switcher{
-  &__wrapper{
+* {
+  font-family: fantasy;
+  box-sizing: border-box;
+}
+body { margin:0}
+nav > * {
+  font-family: monospace;
+}
+.switcher {
+  &__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: calc(100vh - 25px);
     flex-direction: column;
-    background: #747474;
+    background: rgb(225, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      rgba(253, 255, 255, 1) 12%,
+      rgba(230, 248, 253, 1) 30%,
+      rgba(200, 238, 251, 1) 54%,
+      rgba(190, 228, 248, 1) 75%,
+      rgba(177, 216, 245, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(253, 255, 255, 1) 12%,
+      rgba(230, 248, 253, 1) 30%,
+      rgba(200, 238, 251, 1) 54%,
+      rgba(190, 228, 248, 1) 75%,
+      rgba(177, 216, 245, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(253, 255, 255, 1) 12%,
+      rgba(230, 248, 253, 1) 30%,
+      rgba(200, 238, 251, 1) 54%,
+      rgba(190, 228, 248, 1) 75%,
+      rgba(177, 216, 245, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 }

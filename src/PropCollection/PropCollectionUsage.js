@@ -1,12 +1,12 @@
 import React from 'react';
-import RenderProp from './PropCollection'
+import PropCollection from './PropCollection'
 
 import { Switch } from '../Switch/Switch';
 
-const RenderPropUsage = ({ onToggle }) => {
+const PropCollectionUsage = ({ onToggle }) => {
   console.log(onToggle)
   return (
-    <RenderProp onToggle={onToggle} >{({on, togglerProps}) => (
+    <PropCollection onToggle={onToggle} >{({on, togglerProps}) => (
         <div>
           {on ? 'The button is on' : 'The button is off'}
           <Switch on={on} {...togglerProps} />
@@ -15,8 +15,8 @@ const RenderPropUsage = ({ onToggle }) => {
             {on ? 'on' : 'off'}
           </button>
         </div>
-      )}</RenderProp>
+      )}</PropCollection>
   )
 }
 
-export default RenderPropUsage;
+export default PropCollectionUsage;
